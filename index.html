@@ -7,11 +7,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script type="text/javascript" src="file.js"></script>
   <link href="main.css" rel="stylesheet">
-  
 </head>
-<body>
- 
 
+<body> 
  <header>
    <div class="hero_wrap">
     <div class="hero_data">
@@ -22,45 +20,62 @@
   </div><!-- . hero_wrap - -->
  </header>
 
-<section class="main_wrap">
-	<img class="main_img" src='../quiz_app/pics/mnt_img.jpeg'>
-  <div class="main_data">
-    <img class="hiker_img" src='../quiz_app/pics/hiker_img.png'>
-    <div class="ask_wrap">
-      <div class="ask_one">How long is the VT Long Trail?</div>
-      <div class="ask_two">Who is the first person to hike the Appalachian Trail in one trek?</div>
-      <div class="ask_three">Which trail is part of the "Big 3"?</div>
-    </div><!-- . ask_wrap - -->  
-    <div class="progress_wrap">
-      <div class="boot_icon"><img class="q1_boot" src='../quiz_app/pics/step_icon.png' /></div>
-      <div class="boot_icon"><img class="q2_boot" src='../quiz_app/pics/step_icon.png' /></div>
-      <div class="boot_icon"><img class="q3_boot" src='../quiz_app/pics/step_icon.png' /></div>
-    </div><!-- . progress_wrap - -->
-    <div class="answer_wrap">
-      <div class="answer_one">
-        <div class="pick_text" id="answer_a">A.<br />543mi.</div>
-        <div class="pick_text" id="answer_b">B.<br />272mi.</div>
-        <div class="pick_text" id="answer_c">C.<br />1254mi.</div>
-      </div>
-      <div class="answer_two">
-        <div class="pick_text" id="answer_a">A.<br />Eark Shaffer</div>
-        <div class="pick_text" id="answer_b">B.<br />Anna Louise Strong</div>
-        <div class="pick_text" id="answer_c">C.<br />Mike Hanson</div>
-      </div>
-      <div class="answer_three">
-        <div class="pick_text" id="answer_a">A.<br />The Long Trail</div>
-        <div class="pick_text" id="answer_b">B.<br />Allegheny Trail</div>
-        <div class="pick_text" id="answer_c">C.<br /> Continental Divide Trail</div>
-      </div><!-- . answer_text - -->
-    </div><!-- . answer_wrap - -->  
-    <div class="text_wrap">
-      <div class="start_text">Let's Go!</div>
-      <div class="submit_text">Submit</div>
-    </div><!-- . text_wrap - -->
 
-  </div><!-- . main_data - -->
-</section><!-- . main_wrap - -->
+  <section class="main_wrap">
+
+    <img class="main_img" src='pics/mnt_img.jpeg' alt="background">
+
+    <div class="main_data">
+
+      <div class="start_wrap">
+        <div class="start_text">Let's Go!</div>
+      </div><!-- . start_wrap - -->
+
+      <img class="hiker_img" src='pics/hiker_img.png' alt="hiker">
+
+      <div class="ask_wrap">
+        <div class="ask_container">
+          <div class="ask_one">How long is the VT Long Trail?</div>
+        </div>
+        <div class="ask_container">  
+          <div class="ask_two">Who is the first person to hike the Appalachian Trail in one trek?</div>
+        </div>
+        <div class="ask_container">
+          <div class="ask_three">Which trail is part of the "Big 3"?</div>
+        </div>
+      </div><!-- . ask_wrap - -->  
+
+      <div class="answer_wrap">
+        <div class="answer_one">
+          <div class="pick_text" id="answer_a">A.  543mi.</div>
+          <div class="pick_text" id="answer_b">B.  272mi.</div>
+          <div class="pick_text" id="answer_c">C.  254mi.</div>
+        </div>
+        <div class="answer_two">
+          <div class="pick_text" id="answer_a">A.  Eark Shaffer</div>
+          <div class="pick_text" id="answer_b">B.  Anna Louise Strong</div>
+          <div class="pick_text" id="answer_c">C.  Mike Hanson</div>
+        </div>
+        <div class="answer_three">
+          <div class="pick_text" id="answer_a">A.  The Long Trail</div>
+          <div class="pick_text" id="answer_b">B.  Allegheny Trail</div>
+          <div class="pick_text" id="answer_c">C.  Continental Divide Trail</div>
+        </div>
+      </div><!-- . answer_wrap - -->
+
+      <div class="submit_wrap">
+        <div class="submit_text">Submit</div>
+      </div><!-- . submit_wrap - -->
+
+      <div class="progress_wrap">
+        <div class="results">
+          <p class="result_message">Congrats! You finished the quiz, and got correct</p>
+          <div class="button">Try Again</div>
+        </div><!-- . results - -->
+      </div><!-- . progress_wrap - -->
 
 
+    </div><!-- . main_data - -->
+  </section><!-- . main_wrap - -->
 </body>
 </html>

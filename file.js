@@ -1,19 +1,22 @@
 $(document).ready(function(){
 
- var whichAsk = 0; 
+var whichAsk = 0; 
+var askAnswer = "";
+var number = "";
 
 $(".start_text").click(function(){
-    //console.log("this works");
-    $(".ask_one").show();
+    $(".start_wrap").hide();
+    $(".submit_wrap").show();
+    $(".ask_one").show();  
     $(".answer_one").show();  
-    $(".start_text").hide();
-    $(".submit_text").show();
     console.log(whichAsk);
-});/// - start game, first question show
+});/// - start game, show first question
 
-var askAnswer = "";
 $(".pick_text").click(function(){
   askAnswer = (this.id);
+  console.log(this.id);
+  $(this).parent().find('.pick_text').css('color','#47456D');
+  $(this).css('color','#72BA4E');
 });/// - user selects answer
 
 
@@ -46,42 +49,49 @@ $(".submit_text").click(function(){
   function checkAnswer(answer){
     if (whichAsk == 1 && answer == "answer_b"){
       console.log("answer one is right");
-      $(".q1_boot").show();
       q1Hide();
       q2Show();
     }
     else if (whichAsk == 1 && answer !== "answer_b"){
       console.log("answer one is wrong");
-      $(".q1_boot").show();
-      $(".q1_boot").css({"outline": "2px dotted red"});
       q1Hide();
       q2Show();
     }
     else if (whichAsk == 2 && answer == "answer_a") {
       console.log("answer two is right");
-      $(".q2_boot").show();
+
       q2Hide();
       q3Show();
     }
     else if (whichAsk == 2 && answer !== "answer_a") {
       console.log("answer two is wrong");
-      $(".q2_boot").show();
-      $(".q2_boot").css({"outline": "2px dotted red"});
       q2Hide();
       q3Show();
     }
     else if (whichAsk == 3 && answer == "answer_c") {
       console.log("answer three is right");
-      $(".q3_boot").show();
-      $("submit_text").text("you win!")
+      $(".results").show();
+      $(".submit_wrap").hide();
+      $(".ask_three").hide();  
+      $(".answer_three").hide();     
     }
     else if (whichAsk == 3 && answer !== "answer_c") {
       console.log("answer three is wrong");
-      $(".q3_boot").show();
-      $(".q3_boot").css({"outline": "2px dotted red"});
+      $(".results").show();
+      $(".submit_wrap").hide();
+      $(".ask_three").hide();  
+      $(".answer_three").hide();  
     }
     else {
     }
   };/// - result of answer selected by user*/
+
+  $(".button").click(function(){
+    $(".start_wrap").show();
+    $(".results").hide();  
+    whichAsk = 0; 
+    number = 0;
+    askAnswer = 0;
+});/// - start game, show first question
 
 });
