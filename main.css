@@ -3,6 +3,10 @@
  .hero_data { outline: 0px solid red; }
  .wrap_text { outline: 0px black; padding: 1px; font-family: "Sigmar One"; font-size: 40px; text-align: center; color: white; }
 
+.main_img { outline: 0px solid blue; height: 375px; }
+.hiker_img { outline: 0px solid red; height: 125px; width: 125px; position: relative; bottom: 225px; left: 15px;   }
+.hiker_img2 { display: none; outline: 0px solid red; height: 125px; width: 125px; position: relative; bottom: 193px; left: 15px;   }
+
 .main_wrap { outline: 0px solid green; width: 600px; margin: 0 auto; background-color: #606585; }
 
 .start_wrap { outline: 0px solid #E30000; background: #eee; width: 175px; position: relative; bottom: 350px; left: 240px; border-radius: 10px; }
@@ -13,8 +17,6 @@
 .submit_text { font-family: 'Sigmar One'; font-size: 20px; text-align: center; color: white;  }
 .submit_text:hover { cursor: pointer; outline: 3px solid white; color: #47456D; }
 
-.main_img { outline: 0px solid blue; height: 375px; }
-.hiker_img { outline: 0px solid red; height: 125px; width: 125px; position: relative; bottom: 200px; left: 15px; }
 
 .ask_wrap { outline: 0px solid #eee; background: #eee; width: 525px; position: relative; bottom: 475px; left: 40px; border-radius: 10px; }
 .ask_one, .ask_two, .ask_three { font-family: 'Sigmar One'; font-size: 20px; text-align: center; display: none; color: #47456D; height: 75px; padding-top: 15px; }

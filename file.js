@@ -9,6 +9,9 @@ $(".start_text").click(function(){
     $(".submit_wrap").show();
     $(".ask_one").show();  
     $(".answer_one").show();  
+    $(".hiker_img").hide();
+    $(".hiker_img2").show();
+    $(".pick_text").css('color','#47456D');
     console.log(whichAsk);
 });/// - start game, show first question
 
@@ -74,7 +77,7 @@ $(".submit_text").click(function(){
     else if (whichAsk == 3 && answer == "answer_c") {
       console.log("answer three is right");
       number = number+1
-      $(".number").append(number);
+      $(".number").html(number);
       $(".results").show();
       $(".submit_wrap").hide();
       $(".ask_three").hide();  
@@ -82,7 +85,7 @@ $(".submit_text").click(function(){
     }
     else if (whichAsk == 3 && answer !== "answer_c") {
       console.log("answer three is wrong");
-      $(".number").append(number);
+      $(".number").html(number);
       $(".results").show();
       $(".submit_wrap").hide();
       $(".ask_three").hide();  
@@ -95,8 +98,9 @@ $(".submit_text").click(function(){
   $(".button").click(function(){
     $(".start_wrap").show();
     $(".results").hide();  
+    $(".hiker_img").show();
+    $(".hiker_img2").hide();
     whichAsk = 0; 
-    number = 0;
     askAnswer = 0;
 });/// - restart game
 
