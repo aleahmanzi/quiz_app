@@ -1,35 +1,36 @@
- body { background-color: #606585; }
- .hero_wrap { outline: 0px solid blue; width: 600px; padding: 1px; margin: 0 auto; background-color: #72BA4E; }
+ body { background-color: #49497d; }
+ .hero_wrap { outline: 0px solid blue; width: 600px; padding: 1px; margin: 0 auto; background-color: #99D1BE; }
  .hero_data { outline: 0px solid red; }
  .wrap_text { outline: 0px black; padding: 1px; font-family: "Sigmar One"; font-size: 40px; text-align: center; color: white; }
 
-.main_img { outline: 0px solid blue; height: 375px; }
-.hiker_img { outline: 0px solid red; height: 125px; width: 125px; position: relative; bottom: 225px; left: 15px;   }
-.hiker_img2 { display: none; outline: 0px solid red; height: 125px; width: 125px; position: relative; bottom: 193px; left: 15px;   }
+.main_img { outline: 0px solid blue; width: 600px; }
+.hiker_img { outline: 0px solid red; height: 125px; width: 125px; position: relative; bottom: 250px; left: 15px;   }
+.hiker_img2 { display: none; outline: 0px solid red; height: 125px; width: 125px; position: relative; bottom: 218px; left: 15px;   }
 
-.main_wrap { outline: 0px solid green; width: 600px; margin: 0 auto; background-color: #606585; }
+.main_wrap { outline: 0px solid green; width: 600px; margin: 0 auto; background-color: #49497d; }
 
-.start_wrap { outline: 0px solid #E30000; background: #eee; width: 175px; position: relative; bottom: 350px; left: 240px; border-radius: 10px; }
+.start_hero { outline: 0px solid black; width: 525px; position: relative; bottom: 325px; left: 40px; }
+.start_wrap { outline: 0x solid #E30000; background: #eee; width: 175px; border-radius: 10px; margin: 0 auto; }
 .start_text { font-family: 'Sigmar One'; font-size: 20px; text-align: center; color: #47456D; }
-.start_text:hover { cursor: pointer; color: #72BA4E; }
+.start_text:hover { cursor: pointer; color: #99D1BE; }
 
 .submit_wrap { outline: 1px solid white; width: 175px; position: relative; bottom: 425px; left: 225px; display: none; }
 .submit_text { font-family: 'Sigmar One'; font-size: 20px; text-align: center; color: white;  }
-.submit_text:hover { cursor: pointer; outline: 3px solid white; color: #47456D; }
+.submit_text:hover { cursor: pointer; outline: 3px solid white; color: #99D1BE; }
 
 
-.ask_wrap { outline: 0px solid #eee; background: #eee; width: 525px; position: relative; bottom: 475px; left: 40px; border-radius: 10px; }
+.ask_wrap { outline: 0px solid #eee; background: #eee; width: 525px; position: relative; bottom: 460px; left: 40px; border-radius: 10px; }
 .ask_one, .ask_two, .ask_three { font-family: 'Sigmar One'; font-size: 20px; text-align: center; display: none; color: #47456D; height: 75px; padding-top: 15px; }
 
 .answer_wrap { outline: 0px solid black; position: relative; bottom: 450px; left: 50px; }
 .answer_one, .answer_two, .answer_three { outline: 0px solid blue; display: none; }
 .pick_text { outline: 0px solid black; font-family: Open Sans Condensed; width: 250px; height: 25px; position: relative; color: #47456D; left: 130px; padding-top: 5px; padding-left: 15px; margin-bottom: 15px; background: #eee; border-radius: 10px; }
-.pick_text:hover { cursor: pointer; color: #72BA4E; }
+.pick_text:hover { cursor: pointer; color: #99D1BE; }
 
-.progress_wrap { outline: 0px solid #eee; background: #eee; width: 525px; position: relative; bottom: 475px; left: 40px; border-radius: 10px; }
+.progress_wrap { outline: 0px solid #eee; background: #eee; width: 525px; position: relative; bottom: 460px; left: 40px; border-radius: 10px; }
 .results { font-family: 'Sigmar One'; font-size: 20px; text-align: center; display: none; color: #47456D; height: 100px; padding-top: 15px; }
 .button { outline: 0px solid #E30000; background: #eee; width: 175px; position: relative; left: 175px; border-radius: 10px; font-family: 'Sigmar One'; font-size: 20px; text-align: center; color: #47456D; margin-top: 50px; }
-.button:hover { color: #72BA4E; }
+.button:hover { color: #99D1BE; }
 
 
 
