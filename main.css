@@ -30,7 +30,7 @@
 .progress_wrap { outline: 0px solid #eee; background: #eee; width: 525px; position: relative; bottom: 460px; left: 40px; border-radius: 10px; }
 .results { font-family: 'Sigmar One'; font-size: 20px; text-align: center; display: none; color: #47456D; height: 100px; padding-top: 15px; }
 .button { outline: 0px solid #E30000; background: #eee; width: 175px; position: relative; left: 175px; border-radius: 10px; font-family: 'Sigmar One'; font-size: 20px; text-align: center; color: #47456D; margin-top: 50px; }
-.button:hover { color: #99D1BE; }
+.button:hover { color: #99D1BE; cursor: pointer; }
 
 
 

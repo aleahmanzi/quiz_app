@@ -19,7 +19,7 @@ $(".pick_text").click(function(){
   askAnswer = (this.id);
   console.log(this.id);
   $(this).parent().find('.pick_text').css('color','#47456D');
-  $(this).css('color','#72BA4E');
+  $(this).css('color','#99D1BE');
 });/// - user selects answer
 
 
